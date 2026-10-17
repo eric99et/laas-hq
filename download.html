@@ -56,6 +56,7 @@
     .alt { text-align: center; margin: 20px 0 0; font-size: 14px; }
 
     .steps { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 64px; }
+    #quick { grid-column: 1 / -1; }
     .card {
       background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow);
       padding: 28px;
@@ -114,13 +115,23 @@
     </section>
 
     <section class="steps">
+      <div class="card" id="quick">
+        <h2>Fastest: install from your browser</h2>
+        <p class="sub">10 seconds, no security warnings</p>
+        <ol>
+          <li>Open <a href="./">LAAS HQ</a> in <b>Chrome</b> or <b>Edge</b> and click the install icon at the right end of the address bar (or menu → <b>Cast, save and share → Install page as app</b>).</li>
+          <li>In <b>Safari</b> on Mac: <b>File → Add to Dock</b>.</li>
+          <li>LAAS HQ now has its own icon and window, and updates by itself.</li>
+        </ol>
+      </div>
+
       <div class="card" id="mac-steps">
         <h2>Install on Mac</h2>
         <p class="sub">About a minute</p>
         <ol>
           <li>Open <b>LAAS-HQ.dmg</b> and drag <b>LAAS HQ</b> into <b>Applications</b>.</li>
-          <li>The first time only: in Applications, <b>right-click LAAS HQ → Open</b>, then <b>Open</b> again.</li>
-          <li>If your Mac still says it can't be opened: go to <b>System Settings → Privacy &amp; Security</b>, scroll down and click <b>Open Anyway</b>.</li>
+          <li>Double-click <b>LAAS HQ</b>. The first time, your Mac says it can't check the app: click <b>Done</b>.</li>
+          <li>Open <b>System Settings → Privacy &amp; Security</b>, scroll down and click <b>Open Anyway</b> next to LAAS HQ. From then on it opens like any other app.</li>
           <li>Sign in with your LAAS HQ email and password. You stay signed in.</li>
         </ol>
         <p class="note">Why the extra step: the app isn't notarized by Apple yet, so macOS asks once. It's our own app and only opens LAAS HQ. After the first time it opens like any other app.</p>
