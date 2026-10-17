@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#ECECEA" />
+  <title>Download LAAS HQ</title>
+  <link rel="icon" href="./favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" href="./icon-192.png" />
+  <link rel="apple-touch-icon" href="./icon-192.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #ececea; --surface: #ffffff; --surface-2: #f6f6f4; --line: #dededa;
+      --text: #202f30; --text-2: #4c5a5c; --text-3: #7c8789;
+      --accent: #1d5f63; --accent-soft: #e3eeee; --on-accent: #ffffff;
+      --radius: 20px; --radius-pill: 999px;
+      --shadow: 0 1px 2px rgba(32, 47, 48, 0.04), 0 8px 24px rgba(32, 47, 48, 0.04);
+      --head: "Poppins", system-ui, sans-serif; --body: "Inter", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font: 15px/1.6 var(--body); -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); }
+    .wrap { max-width: 880px; margin: 0 auto; padding: 40px 16px 64px; }
+    header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 56px; }
+    header img { height: 20px; display: block; }
+    header a { font: 500 14px/1 var(--head); color: var(--text-2); text-decoration: none; }
+    header a:hover { color: var(--text); }
+
+    .hero { text-align: center; }
+    .hero .icon { width: 104px; height: 104px; display: block; margin: 0 auto 28px; }
+    h1 { font: 500 clamp(28px, 5vw, 40px)/1.15 var(--head); letter-spacing: -0.02em; margin: 0 0 12px; }
+    .lead { font-size: 17px; color: var(--text-2); margin: 0 auto; max-width: 520px; }
+
+    .buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin: 36px 0 12px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      font: 500 15px/1 var(--head); text-decoration: none;
+      padding: 15px 26px; border-radius: var(--radius-pill);
+      border: 1px solid var(--line); background: var(--surface); color: var(--text);
+      transition: background .15s, border-color .15s;
+    }
+    .btn:hover { background: var(--surface-2); }
+    .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+    .btn.primary:hover { background: #174f52; }
+    .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    .btn svg { width: 18px; height: 18px; flex: none; }
+    .meta { text-align: center; font-size: 13px; color: var(--text-3); margin: 0; }
+    .alt { text-align: center; margin: 20px 0 0; font-size: 14px; }
+
+    .steps { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 64px; }
+    .card {
+      background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow);
+      padding: 28px;
+    }
+    .card.active { outline: 1.5px solid var(--accent-soft); }
+    .card h2 { font: 500 17px/1.3 var(--head); margin: 0 0 4px; }
+    .card .sub { font-size: 13px; color: var(--text-3); margin: 0 0 18px; }
+    ol { margin: 0; padding: 0; list-style: none; counter-reset: s; }
+    li { counter-increment: s; position: relative; padding-left: 36px; margin: 0 0 14px; color: var(--text-2); }
+    li:last-child { margin-bottom: 0; }
+    li::before {
+      content: counter(s); position: absolute; left: 0; top: 1px;
+      width: 24px; height: 24px; border-radius: 50%;
+      background: var(--accent-soft); color: var(--accent);
+      font: 600 12px/24px var(--head); text-align: center;
+    }
+    li b { color: var(--text); font-weight: 600; }
+    .note { margin: 18px 0 0; padding: 14px 16px; background: var(--surface-2); border-radius: 12px; font-size: 13px; color: var(--text-2); }
+    code { font: 12px/1.5 ui-monospace, "SF Mono", Menlo, monospace; background: var(--surface-2); padding: 2px 6px; border-radius: 6px; word-break: break-all; }
+    .note code { background: var(--surface); }
+
+    footer { margin-top: 56px; text-align: center; font-size: 13px; color: var(--text-3); }
+    footer a { color: var(--text-2); }
+
+    @media (max-width: 720px) {
+      .steps { grid-template-columns: 1fr; }
+      header { margin-bottom: 40px; }
+      .buttons { flex-direction: column; align-items: stretch; }
+      .btn { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="./logo-ink.png" alt="LAAS" />
+    </header>
+
+    <section class="hero">
+      <img class="icon" src="./icon-512.png" alt="" width="104" height="104" />
+      <h1>LAAS HQ for your desktop</h1>
+      <p class="lead">The team dashboard in its own window, with notifications and an unread badge. It updates by itself, so you only install it once.</p>
+
+      <div class="buttons">
+        <a class="btn" id="mac" href="https://github.com/eric99et/laas-hq/releases/latest/download/LAAS-HQ.dmg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
+          Download for Mac
+        </a>
+        <a class="btn" id="win" href="https://github.com/eric99et/laas-hq/releases/latest/download/LAAS-HQ-Setup.exe">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
+          Download for Windows
+        </a>
+      </div>
+      <p class="meta">Mac: macOS 12 or later, Apple silicon and Intel &nbsp;·&nbsp; Windows: 10 or 11, 64-bit</p>
+      <p class="alt"><a href="./">Open in browser instead</a></p>
+    </section>
+
+    <section class="steps">
+      <div class="card" id="mac-steps">
+        <h2>Install on Mac</h2>
+        <p class="sub">About a minute</p>
+        <ol>
+          <li>Open <b>LAAS-HQ.dmg</b> and drag <b>LAAS HQ</b> into <b>Applications</b>.</li>
+          <li>The first time only: in Applications, <b>right-click LAAS HQ → Open</b>, then <b>Open</b> again.</li>
+          <li>If your Mac still says it can't be opened: go to <b>System Settings → Privacy &amp; Security</b>, scroll down and click <b>Open Anyway</b>.</li>
+          <li>Sign in with your LAAS HQ email and password. You stay signed in.</li>
+        </ol>
+        <p class="note">Why the extra step: the app isn't notarized by Apple yet, so macOS asks once. It's our own app and only opens LAAS HQ. After the first time it opens like any other app.</p>
+      </div>
+
+      <div class="card" id="win-steps">
+        <h2>Install on Windows</h2>
+        <p class="sub">About a minute</p>
+        <ol>
+          <li>Open <b>LAAS-HQ-Setup.exe</b>. It installs for your user only, no admin needed.</li>
+          <li>If you see <b>"Windows protected your PC"</b>: click <b>More info → Run anyway</b>.</li>
+          <li>LAAS HQ opens by itself and is in the Start menu and on your desktop.</li>
+          <li>Sign in with your LAAS HQ email and password. You stay signed in.</li>
+        </ol>
+        <p class="note">Why the warning: SmartScreen warns about apps that aren't code-signed yet. It's our own app and only opens LAAS HQ.</p>
+      </div>
+    </section>
+
+    <footer>
+      Questions? <a href="mailto:support@laaslocks.com">support@laaslocks.com</a> &nbsp;·&nbsp; LAAS ApS, Copenhagen
+    </footer>
+  </div>
+
+  <script>
+    // Put the visitor's own system first.
+    (function () {
+      var ua = navigator.userAgent || "";
+      var p = (navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || "";
+      var os = /Win/i.test(p) || /Windows/i.test(ua) ? "win" : /Mac/i.test(p) || /Mac OS X/i.test(ua) ? "mac" : "";
+      if (!os) return;
+      document.getElementById(os).classList.add("primary");
+      document.getElementById(os + "-steps").classList.add("active");
+      if (os === "win") {
+        var b = document.querySelector(".buttons"), s = document.querySelector(".steps");
+        b.insertBefore(document.getElementById("win"), b.firstChild);
+        s.insertBefore(document.getElementById("win-steps"), s.firstChild);
+      }
+    })();
+  </script>
+</body>
+</html>
